@@ -1,14 +1,10 @@
 import express from "express";
-import {
-  getCustomers,
-  getTransactions,
-  getGeography,
-} from "../controllers/client.js";
+import { getCustomers, getTests, getGeography } from "../controllers/client.js";
 
 const router = express.Router();
 
 router.get("/customers", getCustomers);
-router.get("/transactions", getTransactions);
+router.get("/tests", getTests);
 router.get("/geography", getGeography);
 
 export default router;

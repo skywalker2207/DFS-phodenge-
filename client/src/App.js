@@ -8,7 +8,7 @@ import Layout from "scenes/layout";
 import Dashboard from "scenes/dashboard";
 import Calendar from "scenes/calendar";
 import Customers from "scenes/customers";
-import Transactions from "scenes/transactions";
+import Tests from "scenes/tests";
 import Geography from "scenes/geography";
 import Overview from "scenes/overview";
 import Daily from "scenes/daily";
@@ -31,7 +31,7 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/customers" element={<Customers />} />
               <Route path="/calendar" element={<Calendar />} />
-              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/tests" element={<Tests />} />
               <Route path="/geography" element={<Geography />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/daily" element={<Daily />} />

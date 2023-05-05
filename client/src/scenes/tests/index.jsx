@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { useGetTransactionsQuery } from "state/api";
+import { useGetTestsQuery } from "state/api";
 import Header from "components/Header";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
 
-const Transactions = () => {
+const Tests = () => {
   const theme = useTheme();
 
   // values to be sent to the backend
@@ -15,7 +15,7 @@ const Transactions = () => {
   const [search, setSearch] = useState("");
 
   const [searchInput, setSearchInput] = useState("");
-  const { data, isLoading } = useGetTransactionsQuery({
+  const { data, isLoading } = useGetTestsQuery({
     page,
     pageSize,
     sort: JSON.stringify(sort),
@@ -25,37 +25,76 @@ const Transactions = () => {
   const columns = [
     {
       field: "_id",
-      headerName: "ID",
+      headerName: " Test ID",
+      flex: 1,
+    },
+    
+    {
+      field: "userId",
+      headerName: "Patient Id",
       flex: 1,
     },
     {
-      field: "userId",
-      headerName: "User ID",
+      field: "name",
+      headerName: "Patient Name",
+      flex: 1,
+    },
+    {
+      field: "cost",
+      headerName: "RBC",
+      flex: 1,
+    },
+    {
+      field: "rbc",
+      headerName: "WBC",
+      flex: 1,
+    },
+    {
+      field: "hemoglobin",
+      headerName: "Hemoglobin",
+      flex: 1,
+    },
+    {
+      field: "platelets",
+      headerName: "platlets",
+      flex: 1,
+    },
+        {
+      field: "height",
+      headerName: "Height",
+      flex: 1,
+    },
+        {
+      field: "weight",
+      headerName: "Weight",
       flex: 1,
     },
     {
       field: "createdAt",
-      headerName: "CreatedAt",
+      headerName: "Sample time",
+      flex: 1,
       flex: 1,
     },
     {
-      field: "products",
-      headerName: "# of Products",
+      field: "age",
+      headerName: "age",
       flex: 0.5,
       sortable: false,
-      renderCell: (params) => params.value.length,
+      
     },
     {
-      field: "cost",
-      headerName: "Cost",
+      field: "gender",
+      headerName: "Gender",
       flex: 1,
-      renderCell: (params) => `$${Number(params.value).toFixed(2)}`,
+      
     },
+
+ 
   ];
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="TRANSACTIONS" subtitle="Entire list of transactions" />
+      <Header title="Tests" subtitle="Entire list of clinical tests" />
       <Box
         height="80vh"
         sx={{
@@ -86,7 +125,7 @@ const Transactions = () => {
         <DataGrid
           loading={isLoading || !data}
           getRowId={(row) => row._id}
-          rows={(data && data.transactions) || []}
+          rows={(data && data.tests) || []}
           columns={columns}
           rowCount={(data && data.total) || 0}
           rowsPerPageOptions={[20, 50, 100]}
@@ -108,4 +147,4 @@ const Transactions = () => {
   );
 };
 
-export default Transactions;
+export default Tests;

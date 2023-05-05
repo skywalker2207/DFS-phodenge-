@@ -10,12 +10,15 @@ const BreakdownChart = ({ isDashboard = false }) => {
   if (!data || isLoading) return "Loading...";
 
   const colors = [
-    theme.palette.secondary[500],
+    theme.palette.secondary[100],
     theme.palette.secondary[300],
-    theme.palette.secondary[300],
+    theme.palette.secondary[700],
     theme.palette.secondary[500],
+    theme.palette.secondary[900],
+    theme.palette.secondary[200],
+    theme.palette.secondary[400],
   ];
-  const formattedData = Object.entries(data.salesByCategory).map(
+  const formattedData = Object.entries(data.bloodByCategory).map(
     ([category, sales], i) => ({
       id: category,
       label: category,
@@ -130,7 +133,7 @@ const BreakdownChart = ({ isDashboard = false }) => {
         }}
       >
         <Typography variant="h6">
-          {!isDashboard && "Total:"} ${data.yearlySalesTotal}
+          {!isDashboard && "Total patients:"} {data.yearlySalesTotal}
         </Typography>
       </Box>
     </Box>

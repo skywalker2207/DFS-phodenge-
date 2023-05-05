@@ -50,7 +50,7 @@ const navItems = [
     icon: <CalendarMonthOutlined />,
   },
   {
-    text: "Transactions",
+    text: "Tests",
     icon: <ReceiptLongOutlined />,
   },
   {

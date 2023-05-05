@@ -29,31 +29,36 @@ const Dashboard = () => {
   const columns = [
     {
       field: "_id",
-      headerName: "ID",
+      headerName: "Sample ID",
       flex: 1,
     },
     {
       field: "userId",
-      headerName: "User ID",
+      headerName: "Patient ID",
       flex: 1,
     },
     {
       field: "createdAt",
-      headerName: "CreatedAt",
+      headerName: "Time and Date",
       flex: 1,
     },
     {
-      field: "products",
-      headerName: "# of Products",
+      field: "hemoglobin",
+      headerName: "hemoglobin",
+      flex: 1,
+    },
+    {
+      field: "age",
+      headerName: "Age",
       flex: 0.5,
       sortable: false,
       renderCell: (params) => params.value.length,
     },
     {
       field: "cost",
-      headerName: "Cost",
+      headerName: "Gender",
       flex: 1,
-      renderCell: (params) => `$${Number(params.value).toFixed(2)}`,
+      renderCell: (params) => `${Number(params.value).toFixed(2)}`,
     },
   ];
 
@@ -90,10 +95,10 @@ const Dashboard = () => {
       >
         {/* ROW 1 */}
         <StatBox
-          title="Total Customers"
+          title="Patients This week"
           value={data && data.totalCustomers}
           increase="+14%"
-          description="Since last month"
+          description="Since last week"
           icon={
             <Email
               sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
@@ -101,7 +106,7 @@ const Dashboard = () => {
           }
         />
         <StatBox
-          title="Sales Today"
+          title="Patients Total"
           value={data && data.todayStats.totalSales}
           increase="+21%"
           description="Since last month"
@@ -112,19 +117,21 @@ const Dashboard = () => {
           }
         />
         <Box
+          
           gridColumn="span 8"
           gridRow="span 2"
           backgroundColor={theme.palette.background.alt}
           p="1rem"
           borderRadius="0.55rem"
         >
-          <OverviewChart view="sales" isDashboard={true} />
+         <Header  subtitle="Active Covid Cases" />
+          <OverviewChart view="blood" isDashboard={true} />
         </Box>
         <StatBox
-          title="Monthly Sales"
+          title="Covid-19 Patients"
           value={data && data.thisMonthStats.totalSales}
-          increase="+5%"
-          description="Since last month"
+          increase="+45%"
+          description="Since last Year"
           icon={
             <PersonAdd
               sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
@@ -132,10 +139,10 @@ const Dashboard = () => {
           }
         />
         <StatBox
-          title="Yearly Sales"
+          title="Yearly Patients"
           value={data && data.yearlySalesTotal}
-          increase="+43%"
-          description="Since last month"
+          increase="+5%"
+          description="Since last year"
           icon={
             <Traffic
               sx={{ color: theme.palette.secondary[300], fontSize: "26px" }}
@@ -176,7 +183,7 @@ const Dashboard = () => {
           <DataGrid
             loading={isLoading || !data}
             getRowId={(row) => row._id}
-            rows={(data && data.transactions) || []}
+            rows={(data && data.tests) || []}
             columns={columns}
           />
         </Box>
@@ -188,7 +195,7 @@ const Dashboard = () => {
           borderRadius="0.55rem"
         >
           <Typography variant="h6" sx={{ color: theme.palette.secondary[100] }}>
-            Sales By Category
+            Blood groups afected
           </Typography>
           <BreakdownChart isDashboard={true} />
           <Typography
@@ -196,8 +203,7 @@ const Dashboard = () => {
             fontSize="0.8rem"
             sx={{ color: theme.palette.secondary[200] }}
           >
-            Breakdown of real states and information via category for revenue
-            made for this year and total sales.
+            Breakdown of blood group data currently affected from covid-19.
           </Typography>
         </Box>
       </Box>
