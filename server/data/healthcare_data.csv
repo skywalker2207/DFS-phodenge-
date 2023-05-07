@@ -1,0 +1,11 @@
+subject,relation,object
+Alice,has blood group,O+
+Bob,has blood group,A+
+Charlie,has blood group,B+
+David,has blood group,O+
+Emily,has blood group,AB-
+Alice,has,fever
+Bob,has,fever
+Charlie,has,fever
+David,has,headache
+Emily,has,headache

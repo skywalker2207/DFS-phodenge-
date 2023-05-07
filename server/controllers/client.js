@@ -26,7 +26,7 @@ export const getProducts = async (req, res) => {
   }
 };
 
-export const getCustomers = async (req, res) => {
+export const getPatients = async (req, res) => {
   try {
     const customers = await User.find({ role: "user" }).select("-password");
     res.status(200).json(customers);

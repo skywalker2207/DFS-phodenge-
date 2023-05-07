@@ -7,15 +7,17 @@ import { themeSettings } from "theme";
 import Layout from "scenes/layout";
 import Dashboard from "scenes/dashboard";
 import Calendar from "scenes/calendar";
-import Customers from "scenes/customers";
+import Patients from "scenes/patients";
 import Tests from "scenes/tests";
 import Geography from "scenes/geography";
 import Overview from "scenes/overview";
 import Daily from "scenes/daily";
+import Kg from "scenes/kg";
 import Monthly from "scenes/monthly";
 import Breakdown from "scenes/breakdown";
 import Admin from "scenes/admin";
 import Performance from "scenes/performance";
+import KG from "scenes/kg";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -29,13 +31,14 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/customers" element={<Customers />} />
+              <Route path="/patients" element={<Patients />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/tests" element={<Tests />} />
               <Route path="/geography" element={<Geography />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/daily" element={<Daily />} />
               <Route path="/monthly" element={<Monthly />} />
+              <Route path="/knowledge graph" element={<KG />} />
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/performance" element={<Performance />} />

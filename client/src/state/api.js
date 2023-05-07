@@ -6,7 +6,7 @@ export const api = createApi({
   tagTypes: [
     "User",
     "Calendar",
-    "Customers",
+    "Patients",
     "Tests",
     "Geography",
     "Sales",
@@ -23,9 +23,9 @@ export const api = createApi({
       query: () => "client/calendar",
       providesTags: ["Calendar"],
     }),
-    getCustomers: build.query({
-      query: () => "client/customers",
-      providesTags: ["Customers"],
+    getPatients: build.query({
+      query: () => "client/patients",
+      providesTags: ["Patients"],
     }),
     getTests: build.query({
       query: ({ page, pageSize, sort, search }) => ({
@@ -61,7 +61,7 @@ export const api = createApi({
 export const {
   useGetUserQuery,
   useGetProductsQuery,
-  useGetCustomersQuery,
+  useGetPatientsQuery,
   useGetTestsQuery,
   useGetGeographyQuery,
   useGetSalesQuery,

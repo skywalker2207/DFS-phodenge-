@@ -26,6 +26,7 @@ import {
   AdminPanelSettingsOutlined,
   TrendingUpOutlined,
   PieChartOutlined,
+  MonitorHeartOutlined,
 } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -38,14 +39,14 @@ const navItems = [
     icon: <HomeOutlined />,
   },
   {
-    text: "Client Facing",
+    text: "Reports and Data",
     icon: null,
   },
   {
-    text: "Customers",
+    text: "Patients",
     icon: <Groups2Outlined />,
   },
-   {
+  {
     text: "Calendar",
     icon: <CalendarMonthOutlined />,
   },
@@ -58,7 +59,7 @@ const navItems = [
     icon: <PublicOutlined />,
   },
   {
-    text: "Sales",
+    text: "Graphs",
     icon: null,
   },
   {
@@ -78,16 +79,16 @@ const navItems = [
     icon: <PieChartOutlined />,
   },
   {
+    text: "Knowledge Graph",
+    icon: < MonitorHeartOutlined />,
+  },
+  {
     text: "Management",
     icon: null,
   },
   {
     text: "Admin",
     icon: <AdminPanelSettingsOutlined />,
-  },
-  {
-    text: "Performance",
-    icon: <TrendingUpOutlined />,
   },
 ];
 
