@@ -3,7 +3,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import io
 import base64
+import os
+from dotenv import load_dotenv
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+
+load_dotenv()
+ 
+database_url = os.getenv('MONGO_URL')
+print(database_url)
 
 class KG:
     def __init__(self):
@@ -43,7 +50,7 @@ class KG:
         # connect mongodb and insert the base64 string into the database
         from pymongo import MongoClient
 
-        client = MongoClient("mongodb+srv://skywalker2207:2207@dfs.b2wqoik.mongodb.net/?retryWrites=true&w=majority")
+        client = MongoClient(database_url)
         db = client["test"]
         collection = db["kg"]
         collection.insert_one({"image": string, "userId": "63701cc1f03239d40b000043"})

@@ -5,7 +5,16 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from kg import KG
 import json
+import os
+from dotenv import load_dotenv
 from pymongo import MongoClient
+
+
+
+load_dotenv()
+ 
+database_url = os.getenv('MONGO_URL')
+print(database_url)
 
 app = Flask(__name__)
 CORS(app)
@@ -17,8 +26,10 @@ def apiPost():
     return "Added to DB", 200
 
 @app.route('/apiGet', methods=['GET'])
+
+
 def apiGet():
-    client = MongoClient("mongodb+srv://skywalker2207:2207@dfs.b2wqoik.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient(database_url)
     db = client["test"]
     collection = db["kg"]
     # find the latest entry in the database
