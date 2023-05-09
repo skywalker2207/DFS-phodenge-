@@ -10,18 +10,35 @@ The goal of this project is to build a dashboard analyzing the healthcare databa
 
 ## Installation Steps
 
+Prerequisites:
+
+- Node
+
+For Linux:
+
+```
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+For Mac:
+
+```
+brew install node
+```
+
 - Clone the repository and and go inside the folder, or download the zip file and extract it.
 
 ```
-$ cd server
-$ npm install
+cd server
+npm install
 ```
 
-It should start installing npm packages but in case if your node does not support this then run these commands inside server directory.
+It should start installing npm packages but in case if still doesn't work, run the following command.
 
 ```
-$ nvm install v18.16.0
-$ npm install
+nvm install v18.16.0
+npm install
 ```
 
 - After this make a new file with name `.env` in the `server` folder and write the following code in it.
@@ -34,8 +51,8 @@ PORT = 5001
 - Now run the following command to setup backend and start the server.
 
 ```
-$ npm install mongoose -g
-$ npm run start
+npm install mongoose -g
+npm run start
 ```
 
 - open another terminal and go inside the `data` folder and run the following command.
@@ -56,9 +73,9 @@ REACT_APP_BASE_URL = http://localhost:5001
 - Now run the following command to setup frontend and start the server.
 
 ```
-$ nvm install v18.16.0
-$ npm install
-$ npm run start
+nvm install v18.16.0
+npm install
+npm run start
 ```
 
 This will launch the frontend.
