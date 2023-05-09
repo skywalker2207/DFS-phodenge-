@@ -1,13 +1,67 @@
 # Team Name: Dfs_Phodenge
 
-### Project: Data analytics dashboard 
-
+### Project: Data analytics dashboard
 
 ### Data Area: Data Analytics
 
 ## Overview
 
 The goal of this project is to build a dashboard analyzing the healthcare database along with knowledge graph. We can analyze various trends in the patient's data like patient's basic data (height,weight,etc), medical observations,blood reports,genome sequence data,etc.
+
+## Installation Steps
+
+- Clone the repository and and go inside the folder, or download the zip file and extract it.
+
+```
+$ cd server
+$ npm install
+```
+
+It should start installing npm packages but in case if your node does not support this then run these commands inside server directory.
+
+```
+$ nvm install v18.16.0
+$ npm install
+```
+
+- After this make a new file with name `.env` in the `server` folder and write the following code in it.
+
+```
+MONGO_URL = mongodb+srv://skywalker2207:2207@dfs.b2wqoik.mongodb.net/?retryWrites=true&w=majority
+PORT = 5001
+```
+
+- Now run the following command to setup backend and start the server.
+
+```
+$ npm install mongoose -g
+$ npm run start
+```
+
+- open another terminal and go inside the `data` folder and run the following command.
+
+```
+python3 flask_server.py
+```
+
+This comletes our backend setup.
+
+- Now go inside `client` folder and make a `.env.local` file and paste the following code in it.
+
+```
+REACT_APP_BASE_URL = http://localhost:5001
+
+```
+
+- Now run the following command to setup frontend and start the server.
+
+```
+$ nvm install v18.16.0
+$ npm install
+$ npm run start
+```
+
+This will launch the frontend.
 
 ## Requirements
 
@@ -22,14 +76,12 @@ The platform must be able to manage medical observations, including vital signs,
 physical examination findings, and diagnostic imaging results.
 
 3. Blood Reports
-The platform must be able to store and manage blood reports, including complete blood
-counts, blood chemistries, and other blood test results.
+   The platform must be able to store and manage blood reports, including complete blood
+   counts, blood chemistries, and other blood test results.
 
 4. Data Access, Downloading and Sharing
-Patients must be able to access and share their healthcare data with authorized
-healthcare providers and other authorized individuals
-
-
+   Patients must be able to access and share their healthcare data with authorized
+   healthcare providers and other authorized individuals
 
 ## Non-Functional Requirements
 
@@ -127,19 +179,24 @@ The project is structured as follows:
 ---
 
 ## How to run code?
+
 Prerequisites:
 
 - Node
 
 For Linux:
+
 ```
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
 For Mac:
+
 ```
 brew install node
 ```
+
 - SQL
 
 Local Environment setup or MySQL
@@ -150,6 +207,7 @@ Local Environment setup or MySQL
    ```bash
    npm install
    ```
+
 3. Create `.env` file in root directory and add following variables
 
    ```bash
@@ -161,6 +219,7 @@ Local Environment setup or MySQL
    ```
 
    sample `.env` file
+
    ```bash
    DB_HOST = localhost
    DB_USER = root
@@ -168,11 +227,13 @@ Local Environment setup or MySQL
    DB_NAME = histopathology
    DB_PORT = 3306
    ```
+
 4. install sequelize-cli globally
 
    ```bash
    npm install -g sequelize-cli
    ```
+
 5. Intialiize sequelize
 
    ```bash
@@ -181,20 +242,22 @@ Local Environment setup or MySQL
 
 - configure config file.
 - DB_NAME database should be present in the environment.
-    - ```sql
-        CREATE DATABASE IF NOT EXISTS <DB_NAME>;
-        ```
+  - ```sql
+      CREATE DATABASE IF NOT EXISTS <DB_NAME>;
+    ```
 
 6. Migration of tables
 
    ```bash
    sequelize db:migrate
    ```
+
 7. Run Project
 
    ```bash
    npm start
    ```
+
 8. Run Specific Script
 
    ```bash
@@ -208,6 +271,7 @@ Local Environment setup or MySQL
    ```bash
    node src/scripts/clearTableData.js
    ```
+
 9. You can specify data file to ingest from `index.js` and their respective script files.
 
 ### Team Members
