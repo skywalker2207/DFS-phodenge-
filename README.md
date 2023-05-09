@@ -190,8 +190,15 @@ We have divided project into 3 phases.
 Documentation: [Link](https://github.com/skywalker2207/DFS-phodenge-/blob/main/SRS.pdf)
 
 ---
+## Demo of the WebApp
+<p align="center">
+    ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+</p>
 
-## Folder Structure
+## Traceability 
+
+
+## Code Structure
 
 The project is structured as follows:
 
@@ -203,14 +210,17 @@ The project is structured as follows:
    - `node_modules` : Contains all the npm packages.
    - `public` : Contains all the static files and index.html file.
    - `src` : Contains all the source code for the project.
-     - `components` : Contains all the components of the project.
+      - `assets` : Contains all the assets of the project.
+      - `components` : Contains all the components of the project.
+      - `data` : Contains all the mock data files.
+      - `scenes` : Contains all the scenes of the project.
+      - `state` : Contains all the state of the project.
      - `App.js` : Contains the main component of the project.
      - `index.js` : Contains the code rendering the main component.
      - `index.css` : Contains the styling for the main component.
      - `package.json` : Contains all the npm packages.
      - `package-lock.json` : Contains all the npm packages.
      - `README.md` : Contains all the information about the project.
-     - `yarn.lock` : Contains all the yarn packages.
 
 - `server/`: Contain all backend code
    - `node_modules` : Contains all the npm packages.
@@ -239,108 +249,12 @@ The project is structured as follows:
   - `logger.js`: Logging Methods and Initialization
   - `index.js`: The entry point of the application.
 - `.enc/`: Contains all global variable and private variables of project -->
-- `package-lock.json`: The project's package configuration file.
+- `README.md`: The README file for the project.
+- `SRS.pdf`: The SRS file for the project.
 
----
-<!-- 
-## How to run code?
-
-Prerequisites:
-
-- Node
-
-For Linux:
-
-```
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-For Mac:
-
-```
-brew install node
-```
-
-- SQL
-
-Local Environment setup or MySQL
-
-1. Clone the repository
-2. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-3. Create `.env` file in root directory and add following variables
-
-   ```bash
-   DB_HOST = <ip address>
-   DB_USER = <database user name>
-   DB_PASSWORD = <password of database>
-   DB_NAME = <db name>
-   DB_PORT = <db port>
-   ```
-
-   sample `.env` file
-
-   ```bash
-   DB_HOST = localhost
-   DB_USER = root
-   DB_PASSWORD = root1234
-   DB_NAME = histopathology
-   DB_PORT = 3306
-   ```
-
-4. install sequelize-cli globally
-
-   ```bash
-   npm install -g sequelize-cli
-   ```
-
-5. Intialiize sequelize
-
-   ```bash
-   sequelize init
-   ```
-
-- configure config file.
-- DB_NAME database should be present in the environment.
-  - ```sql
-      CREATE DATABASE IF NOT EXISTS <DB_NAME>;
-    ```
-
-6. Migration of tables
-
-   ```bash
-   sequelize db:migrate
-   ```
-
-7. Run Project
-
-   ```bash
-   npm start
-   ```
-
-8. Run Specific Script
-
-   ```bash
-   node src/scripts/CSV/csvToSql.js
-   ```
-
-   ```bash
-   node src/scripts/JSON/jsonToSql.js
-   ```
-
-   ```bash
-   node src/scripts/clearTableData.js
-   ```
-
-9. You can specify data file to ingest from `index.js` and their respective script files. -->
 
 ### Team Members
 
 - Nikhil aggrawal (2020102021)
 - Mitul Garg (2020102026)
-- Atharv Sujlodegaonkar (2020102025)
+- Atharv Sujlegaonkar (2020102025)
