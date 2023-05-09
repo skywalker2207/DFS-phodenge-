@@ -157,7 +157,7 @@ We have divided project into 3 phases.
 ### Sequence Diagram
 
 <p align="center">
-    <img src="./images/sequence_diagram.png" alt="Sequence Diagram" height="500">
+    <img src="./images/Healthcare_Generic.png" alt="Sequence Diagram" height="500">
 </p>
 
 ---
