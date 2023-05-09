@@ -184,33 +184,6 @@ We have divided project into 3 phases.
 Documentation: [Link](https://github.com/skywalker2207/DFS-phodenge-/blob/main/SRS.pdf)
 
 ---
-
-## Demo of the WebApp
-https://github.com/skywalker2207/DFS-phodenge-/assets/82767260/3efff4af-f166-4782-8485-785d96a15ce0
-
-
-
-
-## Traceability 
-- Requirements: 
-   ##### The first step in the traceability process is to document the requirements for the healthcare data analytics system. These requirements might include the ability to generate statistics on diseases, patients, death tolls, their relation to blood group, and test reports, as well as the ability to filter certain sections of patient reports, analyze the spread of certain diseases throughout the world, and incorporate blood reports, general physical report, and past disease report. The requirements also include the preparation of a knowledge graph that can be used to view certain relations and predict some information or observe a trend. Additionally, the updated requirements include the functionality to view and download reports and schedule appointments. The requirements should be specific, measurable, achievable, relevant, and time-bound.
-
-- Design: 
-   ##### Once the requirements are defined, the next step is to create a design that meets those requirements. The design might include a database schema for storing patient data, algorithms for analyzing the data, and a web interface for viewing the data, downloading reports, and scheduling appointments. The design should be traceable back to the requirements, so that each requirement is clearly linked to a design element.
-
-- Code: 
-   ##### The design is then used as the basis for writing the software code. The code might include SQL queries for retrieving data from the database, Python scripts for analyzing the data, and HTML/CSS/JavaScript code for creating the web interface, allowing users to view, download reports, and schedule appointments. The code should be traceable back to the design, so that each design element is clearly linked to a code module.
-
-- Test: 
-   ##### Once the code is written, it is tested to ensure that it meets the project requirements. The testing might involve unit testing of individual code modules, integration testing of the entire system, and user acceptance testing to ensure that the system meets the needs of the stakeholders. The testing should be traceable back to the code, so that each code module is clearly linked to a test case.
-
-
-
-- Solution Feature: 
-   ##### Finally, the healthcare data analytics system is implemented, which is the complete solution for the project. The system should be traceable back to the requirements, so that each requirement is clearly linked to a solution feature. The system might include features such as the ability to generate statistical reports on diseases, patients, death tolls, and blood groups, the ability to filter patient reports based on certain criteria, and the ability to analyze the spread of diseases throughout the world. Additionally, the system might incorporate blood reports, genome sequencing report, general physical report, and past disease report, allowing for a more comprehensive analysis of patient data. Furthermore, the system might generate a knowledge graph from all the patient's data, allowing for more advanced analysis and insights. The knowledge graph can be used to view certain relations and predict some information or observe a trend, improving the system's ability to provide meaningful insights. The updated solution features include the functionality to view and download reports, as well as schedule appointments, improving the system's usability and accessibility.
-
-By mapping the requirements to the design, code, test, and solution features, traceability ensures that the healthcare data analytics system stays on track and that all components are aligned with the project goals and objectives. This helps to reduce the risk of project failure and ensures that the final solution meets the needs of the stakeholders, including healthcare providers and patients.
-
 ## Code Structure
 
 The project is structured as follows:
@@ -264,6 +237,33 @@ The project is structured as follows:
 - `.enc/`: Contains all global variable and private variables of project -->
 - `README.md`: The README file for the project.
 - `SRS.pdf`: The SRS file for the project.
+
+## Testing of the WebApp
+https://github.com/skywalker2207/DFS-phodenge-/assets/82767260/3efff4af-f166-4782-8485-785d96a15ce0
+
+
+
+
+## Traceability 
+- Requirements: 
+   ##### The first step in the traceability process is to document the requirements for the healthcare data analytics system. These requirements might include the ability to generate statistics on diseases, patients, death tolls, their relation to blood group, and test reports, as well as the ability to filter certain sections of patient reports, analyze the spread of certain diseases throughout the world, and incorporate blood reports, general physical report, and past disease report. The requirements also include the preparation of a knowledge graph that can be used to view certain relations and predict some information or observe a trend. Additionally, the updated requirements include the functionality to view and download reports and schedule appointments. The requirements should be specific, measurable, achievable, relevant, and time-bound.
+
+- Design: 
+   ##### Once the requirements are defined, the next step is to create a design that meets those requirements. The design might include a database schema for storing patient data, algorithms for analyzing the data, and a web interface for viewing the data, downloading reports, and scheduling appointments. The design should be traceable back to the requirements, so that each requirement is clearly linked to a design element.
+
+- Code: 
+   ##### The design is then used as the basis for writing the software code. The code might include SQL queries for retrieving data from the database, Python scripts for analyzing the data, and HTML/CSS/JavaScript code for creating the web interface, allowing users to view, download reports, and schedule appointments. The code should be traceable back to the design, so that each design element is clearly linked to a code module.
+
+- Test: 
+   ##### Once the code is written, it is tested to ensure that it meets the project requirements. The testing might involve unit testing of individual code modules, integration testing of the entire system, and user acceptance testing to ensure that the system meets the needs of the stakeholders. The testing should be traceable back to the code, so that each code module is clearly linked to a test case.
+
+
+
+- Solution Feature: 
+   ##### Finally, the healthcare data analytics system is implemented, which is the complete solution for the project. The system should be traceable back to the requirements, so that each requirement is clearly linked to a solution feature. The system might include features such as the ability to generate statistical reports on diseases, patients, death tolls, and blood groups, the ability to filter patient reports based on certain criteria, and the ability to analyze the spread of diseases throughout the world. Additionally, the system might incorporate blood reports, genome sequencing report, general physical report, and past disease report, allowing for a more comprehensive analysis of patient data. Furthermore, the system might generate a knowledge graph from all the patient's data, allowing for more advanced analysis and insights. The knowledge graph can be used to view certain relations and predict some information or observe a trend, improving the system's ability to provide meaningful insights. The updated solution features include the functionality to view and download reports, as well as schedule appointments, improving the system's usability and accessibility.
+
+By mapping the requirements to the design, code, test, and solution features, traceability ensures that the healthcare data analytics system stays on track and that all components are aligned with the project goals and objectives. This helps to reduce the risk of project failure and ensures that the final solution meets the needs of the stakeholders, including healthcare providers and patients.
+
 
 
 ### Team Members
