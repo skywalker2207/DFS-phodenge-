@@ -192,7 +192,7 @@ Documentation: [Link](https://github.com/skywalker2207/DFS-phodenge-/blob/main/S
 ---
 ## Demo of the WebApp
 <p align="center">
-    ![](https://github.com/skywalker2207/DFS-phodenge-/blob/main/images/demovideo.mov)
+    ![(https://github.com/skywalker2207/DFS-phodenge-/blob/main/images/demovideo.mov)](https://github.com/skywalker2207/DFS-phodenge-/blob/main/images/demovideo)
 </p>
 
 ## Traceability 
