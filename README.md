@@ -119,6 +119,8 @@ to ensure that patient data is up-to-date and accurate.
 
 ## System Design
 
+Flowchart
+
 <p align="center">
 <img src='./images/flowchart.png' alt="Flow Chart" height="500">
 </p>
@@ -168,7 +170,13 @@ We have divided project into 3 phases.
     <img src="./images/Healthcare_Generic.png" alt="Sequence Diagram" height="500">
 </p>
 
-Documentation: [Link](https://flaxen-mayonnaise-bdd.notion.site/Healthcare-Generic-Database-e6712ca6629045faa61c3a8fcf4adbd6)
+## Use Case Diagram
+
+<p align="center">
+    <img src="./images/usecasediagram.jpeg" alt="Sequence Diagram" height="500" width =  "450">
+</p>
+
+<!-- Documentation: [Link](https://flaxen-mayonnaise-bdd.notion.site/Healthcare-Generic-Database-e6712ca6629045faa61c3a8fcf4adbd6) -->
 
 ---
 
