@@ -1,12 +1,12 @@
 # Team Name: Dfs_Phodenge
 
-### Project: Data analytics dashboard
+## Project : Data analytics dashboard
 
-### Data Area: Data Analytics
+## Target Area : Data Analytics
 
 ## Overview
 
-The goal of this project is to build a dashboard analyzing the healthcare database along with knowledge graph. We can analyze various trends in the patient's data like patient's basic data (height,weight,etc), medical observations,blood reports,genome sequence data,etc.
+   The goal of this project is to build a dashboard analyzing the healthcare database along with knowledge graph. We can analyze various trends in the patient's data like patient's basic data (height,weight,etc), medical observations,blood reports,genome sequence data,etc.
 
 ## Installation Steps
 
@@ -83,50 +83,61 @@ This will launch the frontend.
 
 ## Requirements
 
-1.Patient Data Management
-The platform must be able to store and manage basic patient data, including
-demographic information, medical history, and contact information. We are not adding a
-way for a patient to input their data; assuming we have patient data, we will display all
-the data for a better understanding.
+### 1. Patient Data Management
 
-2.Medical Observations
-The platform must be able to manage medical observations, including vital signs,
-physical examination findings, and diagnostic imaging results.
+   The platform must be able to store and manage basic patient data, including
+   demographic information, medical history, and contact information. We are not adding a
+   way for a patient to input their data; assuming we have patient data, we will display all
+   the data for a better understanding.
 
-3. Blood Reports
+### 2. Medical Observations
+
+   The platform must be able to manage medical observations, including vital signs,
+   physical examination findings, and diagnostic imaging results.
+
+### 3. Blood Reports
+
    The platform must be able to store and manage blood reports, including complete blood
    counts, blood chemistries, and other blood test results.
 
-4. Data Access, Downloading and Sharing
+### 4. Data Access, Downloading and Sharing
+
    Patients must be able to access and share their healthcare data with authorized
    healthcare providers and other authorized individuals
 
 ## Non-Functional Requirements
 
-1.Performance
-The platform must be able to support a large number of concurrent users and must
-have a response time of fewer than 2 seconds.
-2.Security
-The platform must have strong security measures in place to protect the confidentiality
-and privacy of patient data.
-3.Usability
-The platform must have a user-friendly interface that is easy for patients to use.
-4.Interoperability
-The platform must be able to interface with other healthcare systems and data sources
-to ensure that patient data is up-to-date and accurate.
+### 1. Performance
+
+   The platform must be able to support a large number of concurrent users and must
+   have a response time of fewer than 2 seconds.
+
+### 2. Security
+
+   The platform must have strong security measures in place to protect the confidentiality
+   and privacy of patient data.
+
+### 3. Usability
+
+   The platform must have a user-friendly interface that is easy for patients to use.
+
+### 4. Interoperability
+
+   The platform must be able to interface with other healthcare systems and data sources
+   to ensure that patient data is up-to-date and accurate.
 
 ## Technical Requirements
 
 ## System Design
 
-Flowchart
+### Flowchart
 
 <p align="center">
 <img src='./images/flowchart.png' alt="Flow Chart" height="500">
 </p>
 
 This flowchart is a graphical representation of a process that depicts the steps involved in completing a our project or task.
-
+<!-- 
 We have divided project into 3 phases.
 
 1. SQL Schema Formation
@@ -154,7 +165,7 @@ We have divided project into 3 phases.
 
 - The third and final phase of our project is to migrate the cleaned data into the SQL database. This involves inserting the data into the appropriate tables in the database, according to the SQL schema we created earlier.
 - The migration process can be done using SQL commands or a variety of tools and programming languages, such as Python or Java.
-- Once the data migration script executed, we will log the process and any errors that may have occurred.
+- Once the data migration script executed, we will log the process and any errors that may have occurred. -->
 
 ### Sequence Diagram
 
@@ -173,10 +184,10 @@ We have divided project into 3 phases.
 ## Use Case Diagram
 
 <p align="center">
-    <img src="./images/usecasediagram.jpeg" alt="Sequence Diagram" height="500" width =  "450">
+    <img src="./images/usecasediagram.jpeg" alt="Sequence Diagram" height="500" width =  "550">
 </p>
 
-<!-- Documentation: [Link](https://flaxen-mayonnaise-bdd.notion.site/Healthcare-Generic-Database-e6712ca6629045faa61c3a8fcf4adbd6) -->
+Documentation: [Link](https://github.com/skywalker2207/DFS-phodenge-/blob/main/SRS.pdf)
 
 ---
 
@@ -208,7 +219,7 @@ The project is structured as follows:
       - `data_generator.py` : Contains the code to generate data.
       - `server.py` : Contains the code to connect to the database.
       - `requirements.txt` : Contains all the requirements for the project
-      
+
 
    - `models` : Contains all the models of the project.
    - `routes` : Contains all the routes of the project.
@@ -231,7 +242,7 @@ The project is structured as follows:
 - `package-lock.json`: The project's package configuration file.
 
 ---
-
+<!-- 
 ## How to run code?
 
 Prerequisites:
@@ -326,10 +337,10 @@ Local Environment setup or MySQL
    node src/scripts/clearTableData.js
    ```
 
-9. You can specify data file to ingest from `index.js` and their respective script files.
+9. You can specify data file to ingest from `index.js` and their respective script files. -->
 
 ### Team Members
 
 - Nikhil aggrawal (2020102021)
 - Mitul Garg (2020102026)
-- Atharv Sujlegaonkar (2020102025)
+- Atharv Sujlodegaonkar (2020102025)
