@@ -99,12 +99,24 @@ This will launch the frontend.
 
    The platform must be able to store and manage blood reports, including complete blood
    counts, blood chemistries, and other blood test results.
+   
 
 ### 4. Data Access, Downloading and Sharing
 
    Patients must be able to access and share their healthcare data with authorized
    healthcare providers and other authorized individuals
 
+### 5. Appointment scheduling
+   Stakeholders must be able to view their schedule and must need a feature to add
+   appointment to schedule.
+
+### 6. Analysis and Comparison
+   Information present must be critically analysed varying with different metrics
+   tounderstand the trend and to ind similarity or differences with some other data.
+### 7. Correlating Information
+   Stakeholder must view all the information at once as graph to find the correlation
+   between data and particular field for which most of the people are affected in order to
+   ind a relation or trend.
 ## Non-Functional Requirements
 
 ### 1. Performance
@@ -126,7 +138,11 @@ This will launch the frontend.
    The platform must be able to interface with other healthcare systems and data sources
    to ensure that patient data is up-to-date and accurate.
 
-## Technical Requirements
+### 5. Representation
+
+   The platform must be able to represent data in a way that is easy for patients to
+   understand.
+<!-- ## Technical Requirements -->
 
 ## System Design
 
