@@ -58,7 +58,8 @@ npm run start
 - open another terminal and go inside the `data` folder and run the following command.
 
 ```
-python3 flask_server.py
+pip install -r requirements.txt
+python3 server.py
 ```
 
 This comletes our backend setup.
