@@ -53,4 +53,8 @@ class KG:
         client = MongoClient(database_url)
         db = client["test"]
         collection = db["kg"]
+        # empty the collection
+        collection.delete_many({})
         collection.insert_one({"image": string, "userId": "63701cc1f03239d40b000043"})
+        
+        

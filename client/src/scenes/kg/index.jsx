@@ -19,6 +19,12 @@ const KG = () => {
   React.useEffect(() => {
     document.title = "KG";
     const APICalls = async () => {
+      await fetch("http://localhost:5000/apiPost", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const res = await fetch("http://localhost:5000/apiGet");
       const data1 = await res.json();
       // remove first 2 characters from data1.image

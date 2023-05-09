@@ -15,6 +15,9 @@ rows = [
     ["Charlie", "has", "fever"],
     ["David", "has", "headache"],
     ["Emily", "has", "headache"],    
+    ["nikhil", "has blood group", "B+"],
+    ["Sujji", "HAS gone to ", "Dubai"],
+    ["Mitul", "is","Duddu"],
     # make random entries here
 ]
 
