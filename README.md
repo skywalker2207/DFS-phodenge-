@@ -190,10 +190,12 @@ We have divided project into 3 phases.
 Documentation: [Link](https://github.com/skywalker2207/DFS-phodenge-/blob/main/SRS.pdf)
 
 ---
+
 ## Demo of the WebApp
-<p align="center">
-    ![(https://github.com/skywalker2207/DFS-phodenge-/blob/main/images/demovideo.mov)](https://github.com/skywalker2207/DFS-phodenge-/blob/main/images/demovideo)
-</p>
+https://github.com/skywalker2207/DFS-phodenge-/assets/82767260/3efff4af-f166-4782-8485-785d96a15ce0
+
+
+
 
 ## Traceability 
 
