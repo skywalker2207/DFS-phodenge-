@@ -184,12 +184,40 @@ We have divided project into 3 phases.
 
 The project is structured as follows:
 
-- `config/`: Contain all configuration while migrating database scripts
+<!-- - `config/`: Contain all configuration while migrating database scripts -->
 - `images/`: Contain all images for README files
-- `logs/`: Contain file for logs
-- `migrations/`: Contain script for migrate tables
-- `src/`: Contains all the source code for the project.
-  - `data/`: Contain all data files for ingestion
+<!-- - `logs/`: Contain file for logs -->
+<!-- - `migrations/`: Contain script for migrate tables -->
+- `client/`: Contain all frontend code
+   - `node_modules` : Contains all the npm packages.
+   - `public` : Contains all the static files and index.html file.
+   - `src` : Contains all the source code for the project.
+     - `components` : Contains all the components of the project.
+     - `App.js` : Contains the main component of the project.
+     - `index.js` : Contains the code rendering the main component.
+     - `index.css` : Contains the styling for the main component.
+     - `package.json` : Contains all the npm packages.
+     - `package-lock.json` : Contains all the npm packages.
+     - `README.md` : Contains all the information about the project.
+     - `yarn.lock` : Contains all the yarn packages.
+
+- `server/`: Contain all backend code
+   - `node_modules` : Contains all the npm packages.
+   - `data` : Contains all the data files.
+      - `healthcare_data.csv` : Contains all the data in csv format.
+      - `data_generator.py` : Contains the code to generate data.
+      - `server.py` : Contains the code to connect to the database.
+      - `requirements.txt` : Contains all the requirements for the project
+      
+
+   - `models` : Contains all the models of the project.
+   - `routes` : Contains all the routes of the project.
+   - `index.js` : Contains the main component of the project.
+   - `package.json` : Contains all the npm packages.
+   - `package-lock.json` : Contains all the npm packages.
+   - `README.md` : Contains all the information about the project.
+<!-- - `src/`: Contains all the source code for the project. -->
+  <!-- - `data/`: Contain all data files for ingestion
   - `database/`: Contain file for database connection
   - `models/`: Contain sequalize models for tables
   - `sample_data/`: Contains sample data with data type
@@ -199,8 +227,8 @@ The project is structured as follows:
     - `clearTableData.js/`: script for clear all data from tables
   - `logger.js`: Logging Methods and Initialization
   - `index.js`: The entry point of the application.
-- `.enc/`: Contains all global variable and private variables of project
-- `package.json`: The project's package configuration file.
+- `.enc/`: Contains all global variable and private variables of project -->
+- `package-lock.json`: The project's package configuration file.
 
 ---
 
