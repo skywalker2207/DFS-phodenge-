@@ -257,6 +257,10 @@ The project is structured as follows:
 ## Testing of the WebApp
 https://github.com/skywalker2207/DFS-phodenge-/assets/82767260/3efff4af-f166-4782-8485-785d96a15ce0
 
+## Testing the Knowledge Graph
+https://github.com/skywalker2207/DFS-phodenge-/assets/82767260/274d68a2-a1e1-4c8d-a7f9-66c0781ceb02
+
+
 
 
 
