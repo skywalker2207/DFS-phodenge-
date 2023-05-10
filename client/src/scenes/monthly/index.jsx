@@ -13,12 +13,12 @@ const Monthly = () => {
 
     const { monthlyData } = data;
     const totalSalesLine = {
-      id: "totalSales",
+      id: "Covid-19",
       color: theme.palette.secondary.main,
       data: [],
     };
     const totalUnitsLine = {
-      id: "totalUnits",
+      id: "Malaria",
       color: theme.palette.secondary[600],
       data: [],
     };
@@ -40,7 +40,7 @@ const Monthly = () => {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="MONTHLY SALES" subtitle="Chart of monthlysales" />
+      <Header title="Monthly Patients" subtitle="Chart of monthly patients" />
       <Box height="75vh">
         {data ? (
           <ResponsiveLine

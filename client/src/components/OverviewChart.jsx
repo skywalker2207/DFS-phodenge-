@@ -12,12 +12,12 @@ const OverviewChart = ({ isDashboard = false, view }) => {
 
     const { monthlyData } = data;
     const totalSalesLine = {
-      id: "totalSales",
+      id: "Covid-19 patients",
       color: theme.palette.secondary.main,
       data: [],
     };
     const totalUnitsLine = {
-      id: "totalUnits",
+      id: "Typhoid patientss",
       color: theme.palette.secondary[600],
       data: [],
     };
@@ -117,7 +117,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         tickRotation: 0,
         legend: isDashboard
           ? ""
-          : `Total ${view === "sales" ? "Revenue" : "Units"} for Year`,
+          : `Total ${view === "sales" ? "Covid-19" : "Typhoid"} for Year`,
         legendOffset: -60,
         legendPosition: "middle",
       }}
@@ -132,31 +132,31 @@ const OverviewChart = ({ isDashboard = false, view }) => {
       legends={
         !isDashboard
           ? [
-              {
-                anchor: "bottom-right",
-                direction: "column",
-                justify: false,
-                translateX: 30,
-                translateY: -40,
-                itemsSpacing: 0,
-                itemDirection: "left-to-right",
-                itemWidth: 80,
-                itemHeight: 20,
-                itemOpacity: 0.75,
-                symbolSize: 12,
-                symbolShape: "circle",
-                symbolBorderColor: "rgba(0, 0, 0, .5)",
-                effects: [
-                  {
-                    on: "hover",
-                    style: {
-                      itemBackground: "rgba(0, 0, 0, .03)",
-                      itemOpacity: 1,
-                    },
+            {
+              anchor: "bottom-right",
+              direction: "column",
+              justify: false,
+              translateX: 30,
+              translateY: -40,
+              itemsSpacing: 0,
+              itemDirection: "left-to-right",
+              itemWidth: 80,
+              itemHeight: 20,
+              itemOpacity: 0.75,
+              symbolSize: 12,
+              symbolShape: "circle",
+              symbolBorderColor: "rgba(0, 0, 0, .5)",
+              effects: [
+                {
+                  on: "hover",
+                  style: {
+                    itemBackground: "rgba(0, 0, 0, .03)",
+                    itemOpacity: 1,
                   },
-                ],
-              },
-            ]
+                },
+              ],
+            },
+          ]
           : undefined
       }
     />

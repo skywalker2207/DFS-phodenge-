@@ -17,12 +17,12 @@ const Daily = () => {
 
     const { dailyData } = data;
     const totalSalesLine = {
-      id: "totalSales",
+      id: "totalPatients",
       color: theme.palette.secondary.main,
       data: [],
     };
     const totalUnitsLine = {
-      id: "totalUnits",
+      id: "totalDeath",
       color: theme.palette.secondary[600],
       data: [],
     };
@@ -49,7 +49,7 @@ const Daily = () => {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="DAILY SALES" subtitle="Chart of daily sales" />
+      <Header title="DAILY Patients" subtitle="Chart of daily patientss" />
       <Box height="75vh">
         <Box display="flex" justifyContent="flex-end">
           <Box>
